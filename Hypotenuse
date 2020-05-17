@@ -1,0 +1,13 @@
+public class Hypotenuse {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int first_steep_edge ;
+        int second_steep_edge ;
+        System.out.print("Please enter the first steep edge ");
+        first_steep_edge = scanner.nextInt();
+        System.out.print("Please enter the second steep edge");
+        second_steep_edge = scanner.nextInt();
+        double Hypotenuse = Math.sqrt(first_steep_edge * first_steep_edge + second_steep_edge * second_steep_edge);
+        System.out.print("Hypotenuse : " + Hypotenuse);
+    }
+}
