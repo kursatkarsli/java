@@ -1,0 +1,138 @@
+package advancedmultiplicationtable;
+import java.util.Scanner;
+public class Advancedmultiplicationtable {
+    public static int subtraction(int a, int b, int c) {
+        return (a - b - c);
+    }
+    public static int subtraction(int a, int b) {
+        return a - b;
+    }
+    public static double division(int a, int b, int c) {
+        return (double) a / b / c;
+    }
+    public static double division(int a, int b) {
+        return ((double) a / b);
+    }
+    public static int addition(int a, int b, int c) {
+        return a + b + c;
+    }
+    public static int addition(int a, int b) {
+        return a + b;
+    }
+    public static int multiplication(int a, int b, int c) {
+        return a * b * c;
+    }
+    public static int multiplication(int a, int b) {
+        return a * b;
+    }
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner scanner = new Scanner(System.in);
+        String operations = " \n\n 1. Addition"
+                + "\n2. Subtraction "
+                + "\n3. Multiplication"
+                + "\n4. Division "
+                + "\n Press q for exit... ";
+        System.out.println("Welcome the Calculator Program... ");
+        while (true) {
+            System.out.println(operations);
+            System.out.println("Please choose operation : ");
+            String operation = scanner.nextLine();
+            if ((operation.equals("q")) || (operation.equals("Q"))) {
+                System.out.println("Exiting from program : ");
+                break;
+            } else if (operation.equals("1")) {
+                System.out.println("With Howmany number you will use (2 or 3 ) ");
+                int number = scanner.nextInt();
+                if (number == 2) {
+                    System.out.println("Enter the first number ");
+                    int first = scanner.nextInt();
+                    System.out.println("Enter the second number ");
+                    int second = scanner.nextInt();
+                    System.out.println("Sum  " + addition(first, second));
+                    scanner.nextLine();
+                } else if (number == 3) {
+                    System.out.println("Enter the first number : ");
+                    int first = scanner.nextInt();
+                    System.out.println("Enter the second number : ");
+                    int second = scanner.nextInt();
+                    System.out.println("Enter the third number: ");
+                    int third = scanner.nextInt();
+                    System.out.println("Sum = " + Advancedmultiplicationtable.addition(first, second, third));
+                    scanner.nextLine();
+                } else {
+                    System.out.println("You have choosed wrong operation...");
+                }
+            } else if (operation.equals("2")) {
+                System.out.println("With Howmany number you will use (2 or 3 )");
+                int number = scanner.nextInt();
+                if (number == 2) {
+                    System.out.println("Enter the first number : ");
+                    int first = scanner.nextInt();
+                    System.out.println("Enter the second number : ");
+                    int second = scanner.nextInt();
+                    System.out.println("Result :  " + subtraction(first, second));
+                    scanner.nextLine();
+                } else if (number == 3) {
+                    System.out.println("Enter the first number : ");
+                    int first = scanner.nextInt();
+                    System.out.println("Enter the second number : ");
+                    int second = scanner.nextInt();
+                    System.out.println("Enter the third number :");
+                    int third = scanner.nextInt();
+                    System.out.println("Result :  " + Advancedmultiplicationtable.subtraction(first, second, third));
+                    scanner.nextLine();
+                } else {
+                    System.out.println("You have choosed wrong operation...");
+                }
+            } else if (operation.equals("3")) {
+                System.out.println("With Howmany number you will use (2 or 3 )");
+                int number = scanner.nextInt();
+                if (number == 2) {
+                    System.out.println("Enter the first number : ");
+                    int first = scanner.nextInt();
+                    System.out.println("Enter the second number : ");
+                    int second = scanner.nextInt();
+                    System.out.println("Result :  " + multiplication(first, second));
+                    scanner.nextLine();
+                } else if (number == 3) {
+                    System.out.println("Enter the first number : ");
+                    int first = scanner.nextInt();
+                    System.out.println("Enter the second number : ");
+                    int second = scanner.nextInt();
+                    System.out.println("Enter the third number : ");
+                    int third = scanner.nextInt();
+                    System.out.println("Result :  " + Advancedmultiplicationtable.multiplication(first, second, third));
+                    scanner.nextLine();
+                } else {
+                    System.out.println("You have choosed wrong operation...");
+                }
+            } else if (operation.equals("4")) {
+                System.out.println("With Howmany number you will use (2 or 3 )");
+                int number = scanner.nextInt();
+                if (number == 2) {
+                    System.out.println("Enter the first number : ");
+                    int first = scanner.nextInt();
+                    System.out.println("Enter the second number : ");
+                    int second = scanner.nextInt();
+                    System.out.println("BÖLÜM = " + division(first, second));
+                    scanner.nextLine();
+                } else if (number == 3) {
+                    System.out.println("Enter the first number : ");
+                    int first = scanner.nextInt();
+                    System.out.println("Enter the second number : ");
+                    int second = scanner.nextInt();
+                    System.out.println("Enter the third number : ");
+                    int third = scanner.nextInt();
+                    System.out.println("Result : " + Advancedmultiplicationtable.division(first, second, third));
+                    scanner.nextLine();
+                } else {
+                    System.out.println("You have choosed wrong operation...");
+                }
+            } else {
+                System.out.println("You have choosed wrong operation...");
+            }
+        }
+    }
+
+}
