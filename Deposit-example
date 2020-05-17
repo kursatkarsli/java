@@ -1,0 +1,21 @@
+package Deposit;
+import java.util.Scanner;
+public class Deposit {
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("********************");
+        System.out.println("Welcome to the Interest Calculation Program .... ");
+        System.out.println("********************");
+        double interest_rate = 0.06;
+        System.out.println("Enter the Amount of Money to Deposit : ");
+        int deposit = scanner.nextInt();
+        System.out.println("Enter the Term : ");
+        int term = scanner.nextInt();
+        double deposit_money = deposit;
+        for (int year = 1; year <= term; year++) {
+            deposit_money = (deposit_money * interest_rate) + deposit_money;
+            System.out.println("After " + year + " Year Total Money at the End of the Year : " + deposit_money);
+        }
+    }
+}
