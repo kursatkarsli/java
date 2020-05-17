@@ -1,0 +1,16 @@
+package pkgfor.döngüsü;
+
+import java.util.Scanner;
+public class LoopofFor {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);      
+        long factoriel = 1;
+        System.out.println("Please enter the number of factoriel");
+        long number = scanner.nextInt();
+        for (long i = 1 ; i <= number ; i++){
+        factoriel *= i;
+            System.out.println("Factoriel : " + factoriel + " i = " + i);
+        }      
+        System.out.println("Factoriel : " + factoriel);    
+    }
+}
