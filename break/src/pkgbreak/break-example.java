@@ -4,13 +4,11 @@
  * and open the template in the editor.
  */
 package pkgbreak;
-
 /**
  *
  * @author kursa
  */
-public class Break {
-
+public class Break_example {
     /**
      * @param args the command line arguments
      */
@@ -21,14 +19,8 @@ public class Break {
           if (i == 10){
               break ;
           }
-                      
-              
-           
-       
            System.out.println("i= " + i);
-                      i++ ;
+                  i++ ;
        }
        }
     }
-    
-
