@@ -1,6 +1,6 @@
 package gcd;
 import java.util.Scanner;
-public class Ebob {
+public class Gcd {
     public static int gcd(int number1,int number2){
         int gcd = 1;
         for (int i = 1 ; i<=number1 && i <=number2 ; i++ ){
