@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Palindrome {
+    public static void main (String args[]){
+        Scanner scanner = new Scanner(System.in);
+        String reversestring = "" ;
+        System.out.println("Please enter the word...");
+        boolean end = false;
+        while(end = true) {
+            String word = scanner.nextLine();
+            int length = word.length();
+            for (int i = 0; i <= length - 1; i++) {
+                reversestring += word.charAt(length-1-i);
+            }
+            System.out.println("Word is processing...");
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                System.out.println("System has faced a problem...");
+            }
+            if (word.equals(reversestring)) {
+                System.out.println("This word is polindrome");
+                System.out.println("Exiting the programing...");
+                end = true;
+                break;
+            } else {
+                System.out.println("This word is not polindrome...");
+                System.out.println("Please try another word...");
+            }
+        }
+    }
+}
