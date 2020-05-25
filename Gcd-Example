@@ -18,4 +18,4 @@ public class Gcd {
         int second_number = i.nextInt();
         System.out.println("Gcd of the numbers : " + gcd(first_number, second_number));  
     } 
-}
+    }
