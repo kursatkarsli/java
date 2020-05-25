@@ -1,6 +1,6 @@
 public static void main(String args[]){
 Scanner scanner = new Scanner(System.in);
-System.o}ut.println("Please enter the number which you want to see digits sum");
+System.out.println("Please enter the number which you want to see digits sum");
 int number = scanner.nextInt();
 int unit_digits = number % 10;
 number = number / 10;
